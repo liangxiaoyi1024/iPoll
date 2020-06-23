@@ -1,0 +1,42 @@
+<mp-toptips msg="{{successMsg}}" show="{{isSuccess}}" type="success"></mp-toptips>
+<view class="view-page">
+    <view class="item-header">
+        <view>
+            <view class="item-title" wx:if="{{article.type=='topic'}}">{{article.title}}</view>
+            <view class="author">{{article.author}}, {{article.created_date}}</view>
+        </view>
+        <view bindtap="share" class="item-menu" data-id="{{article._id}}" data-title="{{article.title}}" wx:if="{{article.type=='topic'}}">
+            <image class="item-header-img" src="/images/icons/ic_share.png"></image>
+        </view>
+    </view>
+    <text class="item-summary text">{{article.content}} </text>
+    <view>
+        <form bindsubmit="clickSubmit">
+            <view class="reply-input">
+                <textarea maxlength="500" name="myReply" placeholder="Type your reply" value="{{replyContent}}"></textarea>
+            </view>
+            <text class="text">{{article.replyRoleNote}}</text>
+            <view class="reply-submit text">
+                <picker bindchange="rolePickerChange" range="{{roles}}" rangeKey="name" value="{{role_index}}">
+                    <view class="pickRole">
+                        <text class="bold">Reply as: </text>
+                        <text>{{roles[role_index].name}}</text>
+                    </view>
+                </picker>
+                <button class="submit-button text" disabled="{{disableSubmit}}" formType="submit" type="primary">send</button>
+            </view>
+        </form>
+    </view>
+    <text class="text">{{article.replyDisplayNote}}</text>
+    <view bindtap="view" class="item-text reply" data-id="{{reply._id}}" wx:for="{{replies}}" wx:for-item="reply" wx:key="_id">
+        <view class="item-summary text">{{reply.answers[0].content}}</view>
+        <view class="item-footer text">
+            <view>{{reply.author}} on {{reply.created_date}}</view>
+            <view wx:if="{{article.type=='topic'}}">
+                <text wx:if="{{reply.reply_count>1}}">{{reply.reply_count}} replies</text>
+                <text wx:elif="{{reply.reply_count==1}}">1 reply</text>
+                <text wx:else></text>
+            </view>
+        </view>
+    </view>
+</view>

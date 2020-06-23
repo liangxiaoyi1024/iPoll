@@ -1,0 +1,2 @@
+<view class="large-padding center">{{content}}</view>
+<button bindtap="login" class="submit text" type="primary">login</button>

@@ -1,0 +1,6 @@
+<navigator class="dummyimage" url="/pages/topics/new/input">
+    <image class="dummyimage" mode="aspectFill" src="../../../images/dummy/TopicType1.jpeg"></image>
+</navigator>
+<navigator class="dummyimage2" url="/pages/Dummy/CreateQuestionaireTopic">
+    <image class="dummyimage2" mode="aspectFill" src="../../../images/dummy/TopicType2.jpeg"></image>
+</navigator>

@@ -1,0 +1,21 @@
+<view class="group">
+    <image class="group-img" mode="aspectFill" src="../../images/login.png"></image>
+</view>
+<view class="text content">
+  This is for HSBC staff use only. It is required to complete staff validation before continuing to use the services:
+</view>
+<view class="text title">Step 1</view>
+<view class="text content">
+  On intranet network, access the following page: https://id.apps.cf.skm-drn-01.cloud.hk.hsbc
+</view>
+<view class="text title">Step 2</view>
+<view class="text content">Click below button to scan the QR code provided in step 1</view>
+<button bindtap="clickScanButton" class="submit" type="primary">
+    <image src="../../images/icons/ic_scan_white.png"></image>
+    <text>Scan for login</text>
+</button>
+<view class="footer">
+    <view>@Copyright. HSBC Technology China Company Limited 2020. </view>
+    <view>All rights reserved.</view>
+</view>
+<mp-toptips msg="{{error}}" show="{{error}}" type="error"></mp-toptips>

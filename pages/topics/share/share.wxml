@@ -1,0 +1,11 @@
+<mp-toptips msg="{{successMsg}}" show="{{isSuccess}}" type="success"></mp-toptips>
+<view class="item-header center small-padding">
+  {{topic.title}}
+</view>
+<view class="text small-padding">
+  You can share this topic by click the share button on right top menu, or save below QR code and send to others.
+</view>
+<view class="share-img">
+    <image mode="widthFix" showMenuByLongpress="true" src="{{acodeUrl}}"></image>
+</view>
+<button bindtap="saveWxacode" class="submit" disabled="{{!isLoaded}}" formType="submit" type="primary">Save</button>

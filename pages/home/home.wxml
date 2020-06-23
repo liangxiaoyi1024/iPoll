@@ -1,0 +1,32 @@
+<view class="menu">
+    <view bindtap="clickScanButton" class="menu-item text">
+        <image class="menu-img" src="../../images/icons/ic_scan-128.png"></image>
+        <view>Scan</view>
+    </view>
+    <navigator url="/pages/topics/new/questions/input">
+        <view class="menu-item text">
+            <image class="menu-img" src="../../images/icons/ic_create-128.png"></image>
+            <view>New topic</view>
+        </view>
+    </navigator>
+    <navigator url="/pages/topics/list/list">
+        <view class="menu-item text">
+            <image class="menu-img" src="../../images/icons/ic_comment-128.png"></image>
+            <view>My topics</view>
+        </view>
+    </navigator>
+    <navigator url="/pages/topics/history/history">
+        <view class="menu-item text">
+            <image class="menu-img" src="../../images/icons/ic_history-128.png"></image>
+            <view>Recent list</view>
+        </view>
+    </navigator>
+</view>
+<mp-toptips msg="{{error}}" show="{{error}}" type="error"></mp-toptips>
+<view class="section">Hot topics</view>
+<topic-list topics="{{topics}}"></topic-list>
+<view class="footer">
+    <navigator url="/pages/about/about">
+        <view>About us</view>
+    </navigator>
+</view>

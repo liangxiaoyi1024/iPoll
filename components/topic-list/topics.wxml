@@ -1,0 +1,13 @@
+<view bindtap="view" class="item item-text" data-id="{{topic._id}}" data-mode="{{topic.mode}}" wx:for="{{topics}}" wx:for-item="topic" wx:key="_id">
+    <view class="item-header">{{topic.shortTitle}}</view>
+    <view class="item-summary">
+    {{topic.questions[0].shortContent}}</view>
+    <view class="item-footer">
+        <view>{{topic.author}} on {{topic.localed_created_date}}</view>
+        <view wx:if="{{!showCount}}">
+            <text wx:if="{{topic.reply_count>1}}"> {{topic.reply_count}} replies</text>
+            <text wx:elif="{{topic.reply_count==1}}"> 1 reply</text>
+            <text wx:else> 0 reply</text>
+        </view>
+    </view>
+</view>

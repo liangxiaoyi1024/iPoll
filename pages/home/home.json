@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "mp-searchbar": "../../components/searchbar/searchbar",
+        "topic-list": "../../components/topic-list/topics"
+    }
+}

@@ -1,0 +1,6 @@
+<view>
+    <view>Voted successfully!</view>
+    <navigator hoverClass="navigator-hover" url="/pages/home/home">
+        <button>Home</button>
+    </navigator>
+</view>

@@ -1,0 +1,21 @@
+<view class="form text">
+    <form bindsubmit="clickSubmit">
+        <view class="title">Title</view>
+        <input class="input" name="title" type="text"></input>
+        <view class="title">Content</view>
+        <textarea maxlength="4000" name="question"></textarea>
+        <picker bindchange="prPickerChange" range="{{participant_roles}}" rangeKey="name" value="{{pr_index}}">
+            <view class="picker">
+                <text class="bold">Post reply Option: </text>
+                <text>{{participant_roles[pr_index].name}}</text>
+            </view>
+        </picker>
+        <picker bindchange="rvPickerChange" range="{{reply_visibilities}}" rangeKey="name" value="{{rv_index}}">
+            <view class="picker">
+                <text class="bold">View replies Option: </text>
+                <text>{{reply_visibilities[rv_index].name}}</text>
+            </view>
+        </picker>
+        <button class="submit text" disabled="{{disableSubmit}}" formType="submit" type="primary">submit</button>
+    </form>
+</view>

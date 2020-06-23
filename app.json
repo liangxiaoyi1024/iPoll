@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/login/login",
+        "pages/topics/new/topicType/select",
+        "pages/topics/new/pk/input",
+        "pages/topics/new/questions/input",
+        "pages/topics/new/success/success",
+        "pages/topics/list/list",
+        "pages/topics/edit/questions/edit",
+        "pages/topics/view/questions/view",
+        "pages/topics/view/vote/vote",
+        "pages/topics/share/share",
+        "pages/topics/history/history",
+        "pages/replies/view/view",
+        "pages/user/user",
+        "pages/about/about",
+        "pages/common/error/error",
+        "pages/common/inDev/index",
+        "pages/s360/t/a/index",
+        "pages/s360/t/p/index",
+        "pages/s360/p/a/index",
+        "pages/s360/p/p/index"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F1ECE6",
+        "navigationBarTitleText": "iPoll",
+        "navigationBarTextStyle": "black"
+    }
+}

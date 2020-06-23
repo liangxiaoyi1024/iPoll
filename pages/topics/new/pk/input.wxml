@@ -1,0 +1,16 @@
+<view class="form">
+    <form bindsubmit="submitTopic">
+        <view class="title">PK survey title</view>
+        <input name="topicTitle" placeholder="Please input title" placeholderClass="placeholder" type="text"></input>
+        <view class="title">Pros title</view>
+        <input name="prosTitle" placeholder="Please input title" placeholderClass="placeholder" type="text"></input>
+        <view class="title">Cons title</view>
+        <input name="conssTitle" placeholder="Please input title" placeholderClass="placeholder" type="text"></input>
+        <checkbox-group class="checkboxs">
+            <checkbox value="checkbox"></checkbox>
+            <text class="checkbox-text">Require Password?</text>
+        </checkbox-group>
+        <button class="submit" formType="submit" type="primary">submit</button>
+    </form>
+</view>
+<view class="footer">Notice: once submitted, the survey will be pubished and available to all users in this platform.</view>

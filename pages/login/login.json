@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "usingComponents": {
+        "mp-toptips": "../../components/toptips/toptips"
+    }
+}

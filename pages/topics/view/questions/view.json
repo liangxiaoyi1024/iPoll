@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "mp-toptips": "../../../../components/toptips/toptips",
+        "article": "../../../../components/article/article"
+    }
+}

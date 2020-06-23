@@ -1,0 +1,1 @@
+<article article="{{reply}}" bind:postedReply="onPostedReply" replies="{{replies}}" roles="{{roles}}"></article>

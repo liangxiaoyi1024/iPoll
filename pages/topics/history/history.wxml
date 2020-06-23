@@ -1,0 +1,2 @@
+<view class="warning" wx:if="{{!hasHistory}}">You don't have any viewed topic.</view>
+<topic-list showCount="false" topics="{{topics}}"></topic-list>

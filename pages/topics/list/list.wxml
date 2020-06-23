@@ -1,0 +1,2 @@
+<view class="warning" wx:if="{{topics.length==0}}">You did not create any topic.</view>
+<topic-list topics="{{topics}}"></topic-list>

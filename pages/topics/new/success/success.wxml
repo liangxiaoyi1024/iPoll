@@ -1,0 +1,20 @@
+<mp-msg title="操作成功" type="success">
+    <view slot="desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
+    <navigator class="weui-msg__link" url="">文字链接</navigator>
+    </view>
+    <view slot="extend">
+        <view>1. 说明1</view>
+        <view>2. 说明2</view>
+    </view>
+    <view slot="handle">
+        <button bindtap="saveWxacode" class="weui-btn" type="primary">保存二维码</button>
+        <button class="weui-btn" type="default">返回首页</button>
+    </view>
+    <image mode="widthFix" showMenuByLongpress="true" src="{{acodeUrl}}"></image>
+    <view slot="footer">
+        <view class="weui-footer__links">
+            <navigator class="weui-footer__link" url="">底部链接文本</navigator>
+        </view>
+        <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+    </view>
+</mp-msg>
